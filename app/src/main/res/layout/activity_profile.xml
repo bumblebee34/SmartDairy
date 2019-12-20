@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/gradientback">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/profile_text_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/main_dashboard_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/milk_log_count_text"
+                android:layout_below="@+id/main_dashboard_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="7 Items"
+                android:textSize="14sp"
+                android:textColor="#52BAFF"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/relative_layout"
+            android:background="@drawable/corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="8dp"
+            android:layout_marginTop="40dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/user_id_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_user_id_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UID"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_user_id_edit_text"
+                        android:layout_below="@+id/profile_user_id_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/name_relative_view"
+                    android:layout_below="@+id/user_id_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_name_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_name_edit_text"
+                        android:layout_below="@+id/profile_name_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bhagyaraj Haranale"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/address_relative_view"
+                    android:layout_below="@+id/name_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_address_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_address_edit_text"
+                        android:layout_below="@+id/profile_address_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abhay Nagar, Sangli"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mobile_relative_view"
+                    android:layout_below="@+id/address_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_mobile_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_mobile_edit_text"
+                        android:layout_below="@+id/profile_mobile_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9373634484"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/date_relative_view"
+                    android:layout_below="@+id/mobile_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_date_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Registration"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_date_edit_text"
+                        android:layout_below="@+id/profile_date_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2019-11-10"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idtype_relative_view"
+                    android:layout_below="@+id/date_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_idtype_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID Type"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_idtype_edit_text"
+                        android:layout_below="@+id/profile_idtype_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pan Card"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idnumber_relative_view"
+                    android:layout_below="@+id/idtype_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_idnumber_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID Number"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_idnumber_edit_text"
+                        android:layout_below="@+id/profile_idnumber_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="123456789123"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/loan_relative_view"
+                    android:layout_below="@+id/idnumber_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_loan_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Loan Amount Remaining"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_loan_edit_text"
+                        android:layout_below="@+id/profile_loan_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.890"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cattle_feed_relative_view"
+                    android:layout_below="@+id/loan_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_cattle_feed_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cattle Feed Amount Remaining"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_cattle_feed_edit_text"
+                        android:layout_below="@+id/profile_cattle_feed_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.500"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/medical_relative_view"
+                    android:layout_below="@+id/cattle_feed_relative_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:id="@+id/profile_medical_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Amount Remaining"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/profile_medical_edit_text"
+                        android:layout_below="@+id/profile_medical_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.250"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="2dp"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_below="@+id/medical_relative_view"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:text="Logout"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

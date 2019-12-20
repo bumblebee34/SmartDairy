@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/loan_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/loan_date_edit_text"
+        android:layout_toEndOf="@+id/loan_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-10"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/loan_amount_text"
+        android:layout_below="@+id/loan_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/loan_amount_edit_text"
+        android:layout_below="@+id/loan_date_edit_text"
+        android:layout_toEndOf="@+id/loan_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.100000"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_below="@+id/loan_amount_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

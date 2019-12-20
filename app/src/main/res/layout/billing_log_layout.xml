@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/billing_from_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_from_date_edit_text"
+        android:layout_toEndOf="@+id/billing_from_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-10"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_to_date_text"
+        android:layout_toEndOf="@+id/billing_from_date_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_to_date_edit_text"
+        android:layout_toEndOf="@+id/billing_to_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-10"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_total_milk_cost_text"
+        android:layout_below="@+id/billing_from_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Milk Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_total_milk_cost_edit_text"
+        android:layout_toEndOf="@+id/billing_total_milk_cost_text"
+        android:layout_below="@+id/billing_from_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.780"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_deducted_loan_cost_text"
+        android:layout_below="@+id/billing_total_milk_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deducted Loan Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_deducted_loan_cost_edit_text"
+        android:layout_toEndOf="@+id/billing_deducted_loan_cost_text"
+        android:layout_below="@+id/billing_total_milk_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.200"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_deducted_cattle_feed_cost_text"
+        android:layout_below="@+id/billing_deducted_loan_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deducted Cattle Feed Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_deducted_cattle_feed_cost_edit_text"
+        android:layout_toEndOf="@+id/billing_deducted_cattle_feed_cost_text"
+        android:layout_below="@+id/billing_deducted_loan_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.200"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_deducted_medical_cost_text"
+        android:layout_below="@+id/billing_deducted_cattle_feed_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deducted Medical Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_deducted_medical_cost_edit_text"
+        android:layout_toEndOf="@+id/billing_deducted_medical_cost_text"
+        android:layout_below="@+id/billing_deducted_cattle_feed_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.150"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_paid_amount_text"
+        android:layout_below="@+id/billing_deducted_medical_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid Amount:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_paid_amount_edit_text"
+        android:layout_toEndOf="@+id/billing_paid_amount_text"
+        android:layout_below="@+id/billing_deducted_medical_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.230"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/billing_paid_date_text"
+        android:layout_below="@+id/billing_paid_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid Date:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/billing_paid_date_edit_text"
+        android:layout_toEndOf="@+id/billing_paid_date_text"
+        android:layout_below="@+id/billing_paid_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-14"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_below="@+id/billing_paid_date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/cattle_feed_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/cattle_feed_date_edit_text"
+        android:layout_toEndOf="@+id/cattle_feed_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-10"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_quantity_text"
+        android:layout_below="@+id/cattle_feed_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_quantity_edit_text"
+        android:layout_below="@+id/cattle_feed_date_text"
+        android:layout_toEndOf="@+id/cattle_feed_quantity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Sacks"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_weight_text"
+        android:layout_below="@+id/cattle_feed_date_edit_text"
+        android:layout_toEndOf="@+id/cattle_feed_quantity_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_weight_edit_text"
+        android:layout_below="@+id/cattle_feed_date_edit_text"
+        android:layout_toEndOf="@+id/cattle_feed_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="59kg"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_rate_text"
+        android:layout_below="@+id/cattle_feed_quantity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate:"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_rate_edit_text"
+        android:layout_below="@+id/cattle_feed_quantity_text"
+        android:layout_toEndOf="@+id/cattle_feed_rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.28"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_cost_text"
+        android:layout_below="@+id/cattle_feed_quantity_text"
+        android:layout_toEndOf="@+id/cattle_feed_rate_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost:"
+        android:layout_alignStart="@+id/cattle_feed_weight_text"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_cost_edit_text"
+        android:layout_below="@+id/cattle_feed_quantity_text"
+        android:layout_toEndOf="@+id/cattle_feed_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.360"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/cattle_feed_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cattle_feed_rate_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="4dp"
+        android:text="Type:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cattle_feed_type_edit_text"
+        android:layout_below="@+id/cattle_feed_rate_text"
+        android:layout_toEndOf="@+id/cattle_feed_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indranil"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_below="@+id/cattle_feed_type_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>
